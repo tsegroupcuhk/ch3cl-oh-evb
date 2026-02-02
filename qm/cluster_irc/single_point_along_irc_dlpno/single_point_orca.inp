@@ -1,0 +1,5 @@
+! DLPNO-CCSD(T) tightPNO RIJK aug-cc-pVQZ aug-cc-pVQZ/JK aug-cc-pVQZ/C tightSCF noautostart miniprint nopop noTRAH
+%maxcore  12000
+%pal nprocs  4 end
+* xyz   0   2
+coordinatehere*
