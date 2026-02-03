@@ -36,7 +36,7 @@ def modify_nbfix(system, nbcut, switchdist):
     nbfix.setSwitchingDistance(switchdist)
 
 #####################Set steps 
-jobname='eqm'
+jobname='rdf'
 forcefield = app.ForceField('toppar.xml')
 Temp=300
 nsavcrd=2000 # every 1 ps
@@ -71,7 +71,7 @@ dist: DISTANCE ATOMS=5001,5005 NOPBC
 
 restraint: RESTRAINT ARG=dist AT=7 KAPPA=100
 
-PRINT ARG=dist,restraint.bias STRIDE=2000 FILE=eqm.cv
+PRINT ARG=dist,restraint.bias STRIDE=2000 FILE=rdf.cv
 """
 ###add plumed force to the system
 system.addForce(PlumedForce(script))

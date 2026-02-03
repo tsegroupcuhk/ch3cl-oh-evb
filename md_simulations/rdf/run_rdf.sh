@@ -11,4 +11,4 @@ conda activate omm8plumed
 export OPENMM_CPU_THREADS=1
 export OMP_NUM_THREADS=1
 
-python eqm.py > eqm.out
+python run_rdf.py > rdf.out

@@ -16,7 +16,7 @@ plt.rc('legend', fontsize=TINY_SIZE-1.0)  # legend fontsize
 
 # Load your trajectory and topology file
 # Replace 'topology_file' and 'trajectory_file' with your actual file paths
-u = mda.Universe("sys.psf","eqm.dcd")
+u = mda.Universe("sys.psf","rdf.dcd")
 
 # Select atom groups (example: oxygen and hydrogen atoms in water)
 oxygen = u.select_atoms("type OOHR")
@@ -26,7 +26,7 @@ hydrogen = u.select_atoms("type ODW")
 rdf = InterRDF(oxygen, hydrogen, nbins=100, range=(0.0, 10.0))
 
 # Run RDF analysis using every frame
-rdf.run(start=0, stop=100_000,step=1) # total 800_000 frames (20+60ns), only use the first 10ns eqm data, since 2 OHR got stuck together later.
+rdf.run(start=0, stop=50_000,step=1) # total 50,000 frames (50 ns)
 
 # Find peaks in the RDF
 peaks, _ = find_peaks(rdf.rdf)
