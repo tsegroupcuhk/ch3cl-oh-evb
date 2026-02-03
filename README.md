@@ -4,7 +4,7 @@ This repository contains the data, force-field parameters, EVB implementation, a
 
 > *Accelerated OH Oxidation of Methyl Chloride via Surface Accumulation at the Air-Water Interface*  
 > *Yutong Yang, Chung Chi Chio, and Ying-Lung Steve Tse*  
-> *[Journal, Year, DOI]*
+> *[Journal, Year, DOI]* 
 
 The focus of the work is an empirical valence bond (EVB) model for the oxidation reaction of methyl chloride, CH<sub>3</sub>Cl, by the OH radical at the air-water interface. The repository provides some input files and example outputs needed to reproduce the main calculations and figures in the paper:
 
