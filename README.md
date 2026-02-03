@@ -69,3 +69,41 @@ The `qm/` folder contains all quantum chemistry input and output files used to c
 
 - `cluster_irc/`: IRC calculation and single-point TightPNO DLPNO-CCSD(T)/aug-cc-pVQZ energies along the reaction path.
 - `stationary_points_coord/`: Optimized geometries and logs for reactant, product, and transition state, plus convenient .xyz files.
+
+---
+
+## Analysis scripts
+The `analysis/` directory contains Python scripts used to process the MD outputs:
+
+- `plotPMF-errorbar-block-avg.py`: Compute PMF error bars by block-averaging WHAM results or equivalent PMF data.
+- `smd_jarzynski_analysis.py`: Post-processing of steered MD work values (Jarzynski analysis).
+- `README`: Short description and usage notes (see `analysis/README.md`).
+
+These scripts expect the directory structure and file naming conventions used in `md_simulations/`. Paths may need minor adjustment if you move things around.
+
+---
+
+## Reproducing results (high-level)
+### 1. Set up your environment
+
+- Python 3.8+
+- Standard scientific Python stack (NumPy, SciPy, Matplotlib); MD engine-specific Python APIs as required (e.g. OpenMM, etc.).
+- A MD engine capable of using the provided EVB and FF parameters (see force-field formats in `forcefield/` and `md_simulations/*/inits/`).
+
+### 2. Re-run representative simulations
+
+- Navigate to a specific system (e.g. `md_simulations/reactive_bulk/128w` or `md_simulations/solvation_droplet/ch3cl_1000w`).
+- Follow the local README to:
+  - prepare/equilibrate the system (`eqm/`),
+  - run SMD or umbrella sampling (`runSMD.py`, `US.sh`, etc.),
+  - analyze trajectories (scripts in the same folder and/or in `analysis/`).
+
+### 3. Reproduce PMFs and other observables
+
+- Use the WHAM output or equivalent PMF outputs in each simulation directory.
+- Apply the scripts in `analysis/` to re-generate plots and error bars.
+
+---
+
+## Contact and issues
+For questions, bug reports, or suggestions, please open an issue on the GitHub repository or contact the corresponding author of the paper.
