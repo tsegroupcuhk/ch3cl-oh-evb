@@ -3,8 +3,8 @@ at z = 4 Å, resolved by effective coordination number (ECN).
 
 The corresponding free-energy profiles are stored in:
 
-  `../../data/reactive_pmfs/ecn_z_4/pmf_slab_ecn_0.dat`
-  `../../data/reactive_pmfs/ecn_z_4/pmf_slab_ecn_1.dat`
-  `../../data/reactive_pmfs/ecn_z_4/pmf_slab_ecn_2.dat`
-  `../../data/reactive_pmfs/ecn_z_4/pmf_slab_ecn_3.dat`
-  `../../data/reactive_pmfs/ecn_z_4/pmf_slab_ecn_4.dat`
+  `data/reactive_pmfs/ecn_z_4/pmf_slab_ecn_0.dat`
+  `data/reactive_pmfs/ecn_z_4/pmf_slab_ecn_1.dat`
+  `data/reactive_pmfs/ecn_z_4/pmf_slab_ecn_2.dat`
+  `data/reactive_pmfs/ecn_z_4/pmf_slab_ecn_3.dat`
+  `data/reactive_pmfs/ecn_z_4/pmf_slab_ecn_4.dat`
