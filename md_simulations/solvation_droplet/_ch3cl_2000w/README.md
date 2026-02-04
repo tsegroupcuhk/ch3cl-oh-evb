@@ -1,5 +1,5 @@
 This directory serves as a pointer to the processed solvation PMF for CH<sub>3</sub>Cl in a
-2000-water system.
+2000-water droplet system.
 
 The corresponding free-energy profile is stored in:
 
