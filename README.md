@@ -8,10 +8,10 @@ This repository contains the data, force-field parameters, EVB implementation, a
 
 The focus of the work is an empirical valence bond (EVB) model for the oxidation reaction of methyl chloride, CH<sub>3</sub>Cl, by the OH radical at the air-water interface. The repository provides some input files and example outputs needed to reproduce the main calculations and figures in the paper:
 
-- EVB and classical force-field parameters
+- EVB model parameters
 - Input files and scripts for representative MD simulations
 - Processed data (PMFs, RDFs, QM reference PES, etc.)
-- Analysis scripts (PMF, Jarzynski analysis, error bars)
+- Analysis scripts (PMF, analysis by Jarzynski equality, error bars)
 
 If you use this repository, please cite the paper above.
 
