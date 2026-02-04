@@ -42,7 +42,7 @@ If you use this repository, please cite the paper above.
 
 Each major subdirectory contains its own README describing how the example was run and how to regenerate the key observables (PMFs, etc.).
 The EVB implementation is provided in each relevant MD folders under `md_simulations/` (e.g. in various `evb/` subdirectories) as a Python module. 
-And the force field parameters for the water, reactant, product models and off-term parameters for EVB are provided in the corresponding `inits/toppar.str`, `inits/toppar.xml`, and `inits/off.xml'. 
+And the force field parameters for the water, reactant, product models and off-term parameters for EVB are provided in the corresponding `inits/toppar.str`, `inits/toppar.xml`, and `inits/off.xml`. 
 
 
 ### 2. Data used for figures
