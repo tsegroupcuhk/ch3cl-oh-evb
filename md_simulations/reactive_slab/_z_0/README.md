@@ -1,1 +1,6 @@
-empty for storage consideration
+This directory serves as a pointer to the processed PMF data for the slab system
+with the reaction center constrained at z = 0 Å.
+
+The corresponding free-energy profile is stored in:
+
+  ../../data/reactive_pmfs/pmf_slab_z_0.dat
